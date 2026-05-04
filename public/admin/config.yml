@@ -1,17 +1,14 @@
 backend:
   name: git-gateway
   branch: main
-
-media_folder: "public/uploads"
-public_folder: "/uploads"
-
+media_folder: public/uploads
+public_folder: /uploads
 collections:
-    - name: "courses"
-    label: "Courses"
-    folder: "content/courses"
+    - name: posts
+    label: Posts
+    folder: content/posts
     create: true
     slug: "{{slug}}"
     fields:
-            - {label: "Title", name: "title", widget: "string"}
-            - {label: "Description", name: "description", widget: "text"}
-            - {label: "Body", name: "body", widget: "markdown"}
+            - {label: Title, name: title, widget: string}
+            - {label: Body, name: body, widget: markdown}
